@@ -3,70 +3,80 @@
 <head>
 <meta charset="utf-8">
 <meta name="color-scheme" content="light only">
-<meta name="theme-color" content="#163A2A">
+<meta name="theme-color" content="#FBFAF7">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Gavs Nizam Hazretleri Ziyareti – Saint-Nicolas</title>
+<title>Gavs Nizam Hazretleri Ziyareti – 5 Ekim 2026 – Saint-Nicolas</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --green:#163A2A; --green-deep:#0E271C; --gold:#C9A64E; --gold-soft:#E6CF8E;
-    --paper:#F8F6EF; --ink:#1A1F1C; --muted:#5B655F; --line:#D9D3C1; --card:#FFFFFF;
-    --warn-bg:#FBEFD9; --warn-ink:#6E4A0C;
+    --bg:#FBFAF7; --surface:#FFFFFF; --ink:#1E2320; --muted:#6E736C; --hair:#E7E2D8;
+    --green:#1F3D2E; --gold:#B8975A; --gold-light:#E9DCC0; --wash:#F3F1EA; --warn:#F8F1E2;
     box-sizing:border-box;
     padding-top:env(safe-area-inset-top,0px);
     padding-bottom:env(safe-area-inset-bottom,0px);
   }
-  html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--green-deep);height:100%;}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--bg);height:100%;}
   *,*::before,*::after{box-sizing:inherit;}
-  body{margin:0;min-height:100%;display:flex;flex-direction:column;background:var(--green-deep);color:var(--ink);font-family:"Figtree","Segoe UI",system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;}
+  body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:"Figtree","Segoe UI",system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;}
   a{color:inherit;}
-  a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px;}
+  a:focus-visible{outline:2px solid var(--gold);outline-offset:4px;}
+  .serif{font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;}
 
   /* Hero */
-  .hero{background:var(--green);color:#F8F6EF;position:relative;overflow:hidden;padding:calc(env(safe-area-inset-top,0px) + 3.5rem) 1.5rem 3rem;text-align:center;}
-  .hero svg.pattern{position:absolute;inset:0;width:100%;height:100%;opacity:.14;pointer-events:none;}
-  .hero .inner{position:relative;max-width:40rem;margin:0 auto;}
-  .hero .kind{font-size:1.05rem;color:var(--gold-soft);margin:0 0 .75rem;font-weight:500;letter-spacing:.01em;}
-  .hero h1{font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;font-weight:600;font-size:clamp(2.4rem,7vw,3.6rem);line-height:1.08;margin:0 0 1rem;}
-  .hero .place{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.4rem;margin:0 0 1.75rem;color:#E9E4D3;}
-  .hero .cta{display:inline-flex;align-items:center;gap:.6rem;background:var(--gold);color:#1A1F1C;text-decoration:none;font-weight:600;padding:.85rem 1.4rem;border-radius:999px;}
-  .hero .cta svg{width:1.1em;height:1.1em;}
-  .ornament{width:5.5rem;height:auto;margin:0 auto 1.25rem;display:block;color:var(--gold);}
+  .hero{position:relative;overflow:hidden;padding:calc(env(safe-area-inset-top,0px) + 4.5rem) 1.5rem 3.5rem;text-align:center;background:linear-gradient(180deg,var(--wash) 0%,var(--bg) 100%);}
+  .hero .pattern{position:absolute;inset:0;width:100%;height:100%;opacity:.5;pointer-events:none;mask-image:radial-gradient(ellipse 70% 80% at 50% 0%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 80% at 50% 0%,#000 20%,transparent 75%);}
+  .hero .inner{position:relative;max-width:42rem;margin:0 auto;}
+  .eyebrow{font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0 0 1.5rem;}
+  .hero h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(2.6rem,8vw,4.4rem);line-height:1.02;letter-spacing:-.01em;margin:0 0 1.6rem;color:var(--green);}
+  .hero h1 em{font-style:italic;font-weight:400;}
+  .rule{width:3rem;height:1px;background:var(--gold);margin:0 auto 1.6rem;}
+  .date{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.55rem;font-weight:500;letter-spacing:.04em;margin:0 0 .35rem;color:var(--ink);}
+  .place{font-size:1rem;color:var(--muted);margin:0 0 2rem;}
+  .cta{display:inline-flex;align-items:center;gap:.6rem;background:var(--green);color:#fff;text-decoration:none;font-weight:500;font-size:.98rem;padding:.9rem 1.5rem;border-radius:999px;box-shadow:0 10px 24px -12px rgba(31,61,46,.55);transition:transform .15s ease,box-shadow .15s ease;}
+  .cta:hover{transform:translateY(-1px);box-shadow:0 14px 28px -12px rgba(31,61,46,.6);}
+  .cta svg{width:1.05em;height:1.05em;}
 
   /* Content */
-  main{max-width:40rem;margin:0 auto;padding:2rem 1.25rem 2.5rem;}
-  .panel{background:var(--paper);max-width:44rem;margin:0 auto;border-radius:1.25rem 1.25rem 0 0;width:100%;}
-  @media (min-width:46rem){.panel{margin:-1.5rem auto 2.5rem;border-radius:1.25rem;box-shadow:0 1rem 2.5rem rgba(0,0,0,.25);} .hero{padding-bottom:4.5rem;}}
-  h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:1.85rem;line-height:1.15;margin:0 0 .75rem;}
+  main{max-width:42rem;margin:0 auto;padding:1rem 1.25rem 3rem;}
+  section{margin:0 0 3rem;}
+  h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:2rem;line-height:1.1;margin:0 0 1.25rem;color:var(--green);}
+  .label{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0 0 .5rem;}
   p{margin:0 0 .75rem;}
   .muted{color:var(--muted);}
-  .map{display:inline-flex;align-items:center;gap:.45rem;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:.2em;font-weight:500;}
-  .map svg{width:1.05em;height:1.05em;color:var(--gold);flex:none;}
 
-  /* Schedule */
-  .schedule{margin:0 0 2.5rem;padding:0;list-style:none;}
-  .schedule li{display:grid;grid-template-columns:7.2rem 1fr;gap:1rem;padding:1.1rem 0;border-top:1px solid var(--line);}
-  .schedule li:last-child{border-bottom:1px solid var(--line);}
-  .schedule time{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.65rem;font-weight:700;line-height:1.1;color:var(--green);white-space:nowrap;}
-  .schedule strong{display:block;font-weight:600;margin-bottom:.15rem;}
-  .schedule .note{color:var(--muted);font-size:.95rem;}
+  /* Timeline */
+  .timeline{list-style:none;margin:0;padding:0;position:relative;}
+  .timeline::before{content:"";position:absolute;left:6.4rem;top:.6rem;bottom:.6rem;width:1px;background:var(--hair);}
+  .timeline li{display:grid;grid-template-columns:5.4rem 1fr;gap:2rem;padding:1.1rem 0;position:relative;}
+  .timeline li::after{content:"";position:absolute;left:calc(6.4rem - 4px);top:1.55rem;width:9px;height:9px;border-radius:50%;background:var(--bg);border:1.5px solid var(--gold);}
+  .timeline time{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.5rem;font-weight:500;line-height:1.15;color:var(--green);text-align:right;white-space:nowrap;}
+  .timeline strong{display:block;font-weight:600;font-size:1.02rem;margin-bottom:.15rem;color:var(--ink);}
+  .timeline .note{color:var(--muted);font-size:.95rem;line-height:1.5;}
+  .tag{display:inline-block;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green);background:var(--wash);border:1px solid var(--hair);padding:.18rem .55rem;border-radius:999px;margin-left:.4rem;vertical-align:middle;font-weight:600;}
 
-  /* Sections */
-  section{margin:0 0 2.5rem;}
-  .callout{background:var(--warn-bg);color:var(--warn-ink);border-left:4px solid var(--gold);padding:.9rem 1rem;border-radius:0 .5rem .5rem 0;margin:.9rem 0 0;font-weight:500;}
-  .two{display:grid;gap:1rem;}
-  @media (min-width:34rem){.two{grid-template-columns:1fr 1fr;}}
-  .box{background:var(--card);border:1px solid var(--line);border-radius:.75rem;padding:1.1rem 1.2rem;}
-  .box h3{margin:0 0 .4rem;font-size:1.05rem;font-weight:600;}
+  /* Cards */
+  .cards{display:grid;gap:1rem;}
+  @media (min-width:34rem){.cards{grid-template-columns:1fr 1fr;}}
+  .card{background:var(--surface);border:1px solid var(--hair);border-radius:1rem;padding:1.35rem 1.4rem;box-shadow:0 1px 2px rgba(30,35,32,.03),0 12px 32px -20px rgba(30,35,32,.18);}
+  .card h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:1.35rem;margin:0 0 .4rem;color:var(--green);}
+  .card p{color:var(--muted);font-size:.96rem;margin:0 0 .6rem;}
+  .link{display:inline-flex;align-items:center;gap:.4rem;text-decoration:none;color:var(--green);font-weight:600;font-size:.95rem;border-bottom:1px solid var(--gold);padding-bottom:1px;}
+  .link svg{width:1em;height:1em;color:var(--gold);}
+  .notice{background:var(--warn);border:1px solid var(--gold-light);border-radius:.9rem;padding:1rem 1.2rem;font-size:.96rem;color:var(--ink);margin:1rem 0 0;}
+  .notice b{color:var(--green);}
+  .rules{list-style:none;margin:0;padding:0;}
+  .rules li{position:relative;padding:.6rem 0 .6rem 1.6rem;border-top:1px solid var(--hair);color:var(--ink);}
+  .rules li:last-child{border-bottom:1px solid var(--hair);}
+  .rules li::before{content:"";position:absolute;left:.15rem;top:1.15rem;width:6px;height:6px;border-radius:50%;background:var(--gold);}
 
-  footer{border-top:1px solid var(--line);padding:1.5rem 1.25rem 2rem;text-align:center;color:var(--muted);font-size:.95rem;max-width:40rem;margin:0 auto;}
-  .hero{background:linear-gradient(180deg,var(--green) 0%,var(--green-deep) 100%);}
-  footer .ornament{width:3rem;margin-bottom:.75rem;}
+  footer{max-width:42rem;margin:0 auto;padding:2rem 1.25rem 3rem;text-align:center;color:var(--muted);font-size:.9rem;}
+  footer .rule{margin-bottom:1.2rem;}
+  footer .serif{font-size:1.4rem;color:var(--green);display:block;margin-bottom:.3rem;}
   @media (prefers-reduced-motion:no-preference){
-    .hero .inner{animation:rise .7s ease-out both;}
-    @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+    .hero .inner{animation:rise .8s cubic-bezier(.2,.7,.2,1) both;}
+    @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
   }
 </style>
 </head>
@@ -75,99 +85,97 @@
 <header class="hero">
   <svg class="pattern" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
     <defs>
-      <pattern id="girih" width="80" height="80" patternUnits="userSpaceOnUse">
-        <g fill="none" stroke="#F8F6EF" stroke-width="1">
-          <path d="M40 4 L52 28 L76 40 L52 52 L40 76 L28 52 L4 40 L28 28 Z"/>
-          <path d="M40 16 L47 33 L64 40 L47 47 L40 64 L33 47 L16 40 L33 33 Z"/>
-          <path d="M0 0 L16 16 M80 0 L64 16 M0 80 L16 64 M80 80 L64 64"/>
+      <pattern id="girih" width="96" height="96" patternUnits="userSpaceOnUse">
+        <g fill="none" stroke="#B8975A" stroke-width=".8" opacity=".55">
+          <path d="M48 6 L62 34 L90 48 L62 62 L48 90 L34 62 L6 48 L34 34 Z"/>
+          <path d="M48 20 L56 40 L76 48 L56 56 L48 76 L40 56 L20 48 L40 40 Z"/>
         </g>
       </pattern>
     </defs>
     <rect width="100%" height="100%" fill="url(#girih)"/>
   </svg>
   <div class="inner">
-    <svg class="ornament" viewBox="0 0 120 24" aria-hidden="true" fill="currentColor">
-      <path d="M0 12h40l6-4 6 4 6-4 6 4 6-4 6 4 6-4 6 4h32v1H82l-6 4-6-4-6 4-6-4-6 4-6-4-6 4-6-4H0z" opacity=".9"/>
-      <circle cx="60" cy="12" r="3"/>
-    </svg>
-    <p class="kind">Ziyaret duyurusu</p>
-    <h1>Gavs Nizam Hazretleri<br>Ziyareti</h1>
-    <p class="place">Saint-Nicolas · Rue des Bons Buveurs 226</p>
+    <p class="eyebrow">Ziyaret Duyurusu</p>
+    <h1>Gavs Nizam Hazretleri<br><em>Ziyareti</em></h1>
+    <div class="rule"></div>
+    <p class="date">5 Ekim 2026 · Pazartesi</p>
+    <p class="place">Saint-Nicolas · Rue des Bons Buveurs 226 · Öğle namazı 13.32</p>
     <a class="cta" href="https://www.google.com/maps/search/?api=1&query=Rue+des+Bons+Buveurs+226%2C+4420+Saint-Nicolas" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-7.4 7-12a7 7 0 1 0-14 0c0 4.6 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
-      Vakfın adresini haritada aç
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-7.4 7-12a7 7 0 1 0-14 0c0 4.6 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      Haritada aç
     </a>
   </div>
 </header>
 
-<div class="panel">
 <main>
   <section>
+    <p class="label">Program</p>
     <h2>Günün akışı</h2>
-    <ul class="schedule">
+    <ul class="timeline">
+      <li>
+        <time>11.00</time>
+        <div><strong>Baylar için giriş</strong><span class="note">Kapılar baylar için saat 11.00’den itibaren açıktır.</span></div>
+      </li>
       <li>
         <time>11.00<br>– 11.30</time>
-        <div>
-          <strong>Bayanlar için giriş</strong>
-          <span class="note">Saat 11.30’dan sonra bayanlar için girişler kapanacaktır. Lütfen bu saat aralığında gelmeye özen gösteriniz.</span>
-        </div>
+        <div><strong>Bayanlar için giriş</strong><span class="note">Saat 11.30’dan sonra bayanlar için girişler kapanacaktır. Lütfen bu saat aralığında gelmeye özen gösteriniz.</span></div>
       </li>
       <li>
         <time>11.30<br>– 12.30</time>
-        <div>
-          <strong>Ücretsiz servis</strong>
-          <span class="note">Rue Grimbérieux tarafına park eden misafirleri vakfa taşır. Servis sadece baylar içindir.</span>
-        </div>
+        <div><strong>Ücretsiz servis <span class="tag">Sadece baylar</span></strong><span class="note">Rue Grimbérieux tarafına park eden misafirleri vakfa taşır.</span></div>
       </li>
       <li>
-        <time>Öğle</time>
-        <div>
-          <strong>Öğle namazı</strong>
-          <span class="note">Gavs Nizam Hazretleri öğle namazında vakıfta olacaktır.</span>
-        </div>
+        <time>13.32</time>
+        <div><strong>Öğle namazı</strong><span class="note">Gavs Nizam Hazretleri öğle namazında vakıfta olacaktır.</span></div>
+      </li>
+      <li>
+        <time>İkram</time>
+        <div><strong>İkram <span class="tag">Bahçede</span></strong><span class="note">Misafirlerimize bahçede ikramda bulunulacaktır.</span></div>
       </li>
     </ul>
   </section>
 
   <section>
-    <h2>Adres</h2>
-    <p>Rue des Bons Buveurs 226<br>4420 Saint-Nicolas</p>
-    <a class="map" href="https://www.google.com/maps/search/?api=1&query=Rue+des+Bons+Buveurs+226%2C+4420+Saint-Nicolas" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-7.4 7-12a7 7 0 1 0-14 0c0 4.6 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
-      Google Maps’te aç
-    </a>
-  </section>
-
-  <section>
-    <h2>Otopark ve servis</h2>
-    <div class="two">
-      <div class="box">
-        <h3>Vakıf otoparkı</h3>
-        <p class="muted">Sadece Gavs Hazretleri’nin misafirlerine ayrılmıştır.</p>
-      </div>
-      <div class="box">
-        <h3>Diğer misafirler</h3>
-        <p class="muted">Araçlarını Rue Grimbérieux tarafına park edebilirler.</p>
-        <a class="map" href="https://www.google.com/maps/search/?api=1&query=Rue+Grimb%C3%A9rieux%2C+4420+Saint-Nicolas" target="_blank" rel="noopener">
+    <p class="label">Ulaşım</p>
+    <h2>Adres ve otopark</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Vakıf</h3>
+        <p>Rue des Bons Buveurs 226<br>4420 Saint-Nicolas</p>
+        <p>Vakıf otoparkı sadece Gavs Hazretleri’nin misafirlerine ayrılmıştır.</p>
+        <a class="link" href="https://www.google.com/maps/search/?api=1&query=Rue+des+Bons+Buveurs+226%2C+4420+Saint-Nicolas" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-7.4 7-12a7 7 0 1 0-14 0c0 4.6 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          Rue Grimbérieux haritada
+          Google Maps
+        </a>
+      </div>
+      <div class="card">
+        <h3>Misafir otoparkı</h3>
+        <p>Rue Grimbérieux<br>4420 Saint-Nicolas</p>
+        <p>11.30 – 12.30 arasında buradan vakfa ücretsiz servis vardır (sadece baylar için).</p>
+        <a class="link" href="https://www.google.com/maps/search/?api=1&query=Rue+Grimb%C3%A9rieux%2C+4420+Saint-Nicolas" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-7.4 7-12a7 7 0 1 0-14 0c0 4.6 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Google Maps
         </a>
       </div>
     </div>
-    <p class="callout">11.30 – 12.30 arasında ücretsiz servis, Rue Grimbérieux’den vakfa ulaşım sağlar. Servis sadece baylar içindir.</p>
   </section>
 
   <section>
-    <h2>Rica</h2>
-    <p>Lütfen trafik ve park düzenine dikkat ederek görevli arkadaşların yönlendirmelerine uyalım.</p>
+    <p class="label">Rica</p>
+    <h2>Hatırlatmalar</h2>
+    <ul class="rules">
+      <li>Lütfen trafik ve park düzenine dikkat ederek görevli arkadaşların yönlendirmelerine uyalım.</li>
+      <li>Kaldırımlara ve komşuların garaj önlerine park etmeyiniz.</li>
+      <li>Bayanlar için giriş 11.30’da kapanmaktadır.</li>
+    </ul>
   </section>
 </main>
 
 <footer>
-  <svg class="ornament" viewBox="0 0 120 24" aria-hidden="true" fill="currentColor"><path d="M0 12h40l6-4 6 4 6-4 6 4 6-4 6 4 6-4 6 4h32v1H82l-6 4-6-4-6 4-6-4-6 4-6-4-6 4-6-4H0z"/><circle cx="60" cy="12" r="3"/></svg>
-  Teşriflerinizi bekleriz.
+  <div class="rule"></div>
+  <span class="serif">Teşriflerinizi bekleriz.</span>
+  Rue des Bons Buveurs 226 · 4420 Saint-Nicolas
 </footer>
-</div>
 
 </body>
 </html>
