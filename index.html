@@ -38,6 +38,12 @@
   .cta{display:inline-flex;align-items:center;gap:.6rem;background:var(--green);color:#fff;text-decoration:none;font-weight:500;font-size:.98rem;padding:.9rem 1.5rem;border-radius:999px;box-shadow:0 10px 24px -12px rgba(31,61,46,.55);transition:transform .15s ease,box-shadow .15s ease;}
   .cta:hover{transform:translateY(-1px);box-shadow:0 14px 28px -12px rgba(31,61,46,.6);}
   .cta svg{width:1.05em;height:1.05em;}
+  .ctas{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;}
+  .cta.secondary{background:transparent;color:var(--green);border:1.5px solid var(--green);box-shadow:none;}
+  .nav{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.9rem;}
+  .nav a{display:inline-flex;align-items:center;gap:.4rem;text-decoration:none;font-weight:600;font-size:.9rem;padding:.6rem 1rem;border-radius:999px;background:var(--green);color:#fff;}
+  .nav a.alt{background:transparent;color:var(--green);border:1.5px solid var(--hair);}
+  .nav svg{width:1em;height:1em;}
 
   /* Content */
   main{max-width:42rem;margin:0 auto;padding:1rem 1.25rem 3rem;}
@@ -65,7 +71,7 @@
   .card p{color:var(--muted);font-size:.96rem;margin:0 0 .6rem;}
   .link{display:inline-flex;align-items:center;gap:.4rem;text-decoration:none;color:var(--green);font-weight:600;font-size:.95rem;border-bottom:1px solid var(--gold);padding-bottom:1px;}
   .link svg{width:1em;height:1em;color:var(--gold);}
-  .notice{background:var(--warn);border:1px solid var(--gold-light);border-radius:.9rem;padding:1rem 1.2rem;font-size:.96rem;color:var(--ink);margin:1rem 0 0;}
+  .notice{background:var(--warn);border:1px solid var(--gold-light);border-radius:.9rem;padding:.8rem 1rem;font-size:.95rem;color:var(--ink)!important;margin:.4rem 0 .9rem;line-height:1.45;}
   .notice b{color:var(--green);}
   .rules{list-style:none;margin:0;padding:0;}
   .rules li{position:relative;padding:.6rem 0 .6rem 1.6rem;border-top:1px solid var(--hair);color:var(--ink);}
@@ -99,10 +105,10 @@
     <div class="rule"></div>
     <p class="date">5 Ekim 2026 · Pazartesi</p>
     <p class="place">Saint-Nicolas · Rue des Bons Buveurs 226 · Öğle namazı 13.32</p>
-    <a class="cta" href="https://www.google.com/maps/search/?api=1&query=Rue+des+Bons+Buveurs+226%2C+4420+Saint-Nicolas" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-7.4 7-12a7 7 0 1 0-14 0c0 4.6 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
-      Haritada aç
-    </a>
+    <div class="ctas">
+      <a class="cta" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rue+des+Bons+Buveurs+226%2C+4420+Saint-Nicolas&amp;travelmode=driving" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>Yol tarifi al</a>
+      <a class="cta secondary" href="https://waze.com/ul?q=Rue+des+Bons+Buveurs+226+4420+Saint-Nicolas&amp;navigate=yes" target="_blank" rel="noopener">Waze ile aç</a>
+    </div>
   </div>
 </header>
 
@@ -141,20 +147,21 @@
       <div class="card">
         <h3>Vakıf</h3>
         <p>Rue des Bons Buveurs 226<br>4420 Saint-Nicolas</p>
-        <p>Vakıf otoparkı sadece Gavs Hazretleri’nin misafirlerine ayrılmıştır.</p>
-        <a class="link" href="https://www.google.com/maps/search/?api=1&query=Rue+des+Bons+Buveurs+226%2C+4420+Saint-Nicolas" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-7.4 7-12a7 7 0 1 0-14 0c0 4.6 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          Google Maps
-        </a>
+        <p>Vakıf otoparkı ziyaret günü kapalı olacaktır.</p>
+        <div class="nav">
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Rue+des+Bons+Buveurs+226%2C+4420+Saint-Nicolas&amp;travelmode=driving" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>Yol tarifi al</a>
+          <a class="alt" href="https://waze.com/ul?q=Rue+des+Bons+Buveurs+226+4420+Saint-Nicolas&amp;navigate=yes" target="_blank" rel="noopener">Waze</a>
+        </div>
       </div>
       <div class="card">
         <h3>Misafir otoparkı</h3>
         <p>Rue Grimbérieux<br>4420 Saint-Nicolas</p>
         <p>11.30 – 12.30 arasında buradan vakfa ücretsiz servis vardır (sadece baylar için).</p>
-        <a class="link" href="https://www.google.com/maps/search/?api=1&query=Rue+Grimb%C3%A9rieux%2C+4420+Saint-Nicolas" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-7.4 7-12a7 7 0 1 0-14 0c0 4.6 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          Google Maps
-        </a>
+        <p class="notice"><b>Önemli:</b> Misafir otoparkında araçlar sokağa doğru park edilmelidir.</p>
+        <div class="nav">
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Rue+Grimb%C3%A9rieux%2C+4420+Saint-Nicolas&amp;travelmode=driving" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>Yol tarifi al</a>
+          <a class="alt" href="https://waze.com/ul?q=Rue+Grimberieux+4420+Saint-Nicolas&amp;navigate=yes" target="_blank" rel="noopener">Waze</a>
+        </div>
       </div>
     </div>
   </section>
